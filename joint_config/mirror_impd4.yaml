@@ -2,423 +2,141 @@ zmq_setup:
   timeout: 1000
 
 #############################
-# Head
+# ARM 1 
 #############################
-head_roll:
-  control_mode: 3B_motor_pos_ctrl
-  sign: 1
-  pos_offset: 0
-  max_current_A: 0.0
-  pid :
-    position: [220.0 , 0.0 , 5.0]
-    #  .... tor_K divided by 10000 to respect the int range [0..65536]
-    #impedance:  [0.0, 0.0, 5.0, 0.001, 0.08]
-    impedance:   [250.0, 5.0, 2.0, 0.001, 0.08]
-
-#############################
-# Right tibia
-#############################
-RHipLat:
+arm_1_joint_1:
   control_mode: D4_impedance_ctrl
-  sign: 1
-  pos_offset: 0
-  max_current_A: 0.0
   pid :
-    position: [220.0 , 0.0 , 5.0]
-    #  .... tor_K divided by 10000 to respect the int range [0..65536]
-    #impedance:  [0.0, 0.0, 5.0, 0.001, 0.08]
-    impedance:   [250.0, 5.0, 2.0, 0.001, 0.08]
+    position: [220.0 , 0.0 , 10.0]
+    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
 
 
-RHipSag:
+arm_1_joint_2:
   control_mode: D4_impedance_ctrl
-  sign: -1
-  pos_offset: 0
-  max_current_A: 0.0
   pid :
-    position: [220.0 , 0.0 , 5.0]
-    #  .... tor_K divided by 10000 to respect the int range [0..65536]
-    #impedance:  [0.0, 0.0, 5.0, 0.001, 0.08]
-    impedance:   [250.0, 5.0, 2.0, 0.001, 0.08]
+    position: [220.0 , 0.0 , 10.0]
+    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
 
     
-RHipYaw:
+arm_1_joint_3:
   control_mode: D4_impedance_ctrl
-  sign: -1
-  pos_offset: 0
-  max_current_A: 0.0
   pid :
-    position: [220.0 , 0.0 , 5.0]
-    #  .... tor_K divided by 10000 to respect the int range [0..65536]
-    #impedance:  [0.0, 0.0, 5.0, 0.001, 0.08]
-    impedance:   [250.0, 5.0, 2.0, 0.001, 0.08]
+    position: [220.0 , 0.0 , 10.0]
+    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
   
 
-RKneePitch:
+arm_1_joint_4:
   control_mode: D4_impedance_ctrl
-  sign: -1
-  pos_offset: 0
-  max_current_A: 0.0
   pid :
-    position: [220.0 , 0.0 , 5.0]
-    #  .... tor_K divided by 10000 to respect the int range [0..65536]
-    #impedance:  [0.0, 0.0, 5.0, 0.001, 0.08]
-    impedance:   [250.0, 5.0, 2.0, 0.001, 0.08]
+    position: [220.0 , 0.0 , 10.0]
+    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
 
 
-RAnkleLeftMot:
+arm_1_joint_5:
   control_mode: D4_impedance_ctrl
-  sign: 1
-  pos_offset: 0
-  max_current_A: 0.0
   pid :
-    position: [220.0 , 0.0 , 5.0]
-    #  .... tor_K divided by 10000 to respect the int range [0..65536]
-    #impedance:  [0.0, 0.0, 5.0, 0.001, 0.08]
-    impedance:   [250.0, 5.0, 2.0, 0.001, 0.08]
+    position: [220.0 , 0.0 , 10.0]
+    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
 
 
-RAnkleRightMot:
+arm_1_joint_6:
   control_mode: D4_impedance_ctrl
-  sign: -1
-  pos_offset: 0
-  max_current_A: 0.0
   pid :
-    position: [220.0 , 0.0 , 5.0]
-    #  .... tor_K divided by 10000 to respect the int range [0..65536]
-    #impedance:  [0.0, 0.0, 5.0, 0.001, 0.08]
-    impedance:   [250.0, 5.0, 2.0, 0.001, 0.08]
-
+    position: [220.0 , 0.0 , 10.0]
+    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
 
 #############################
-# Left tibia
+# ARM 2 
 #############################
-LHipLat:
+arm_2_joint_1:
+  control_mode: D4_impedance_ctrl
+  pid :
+    position: [220.0 , 0.0 , 10.0]
+    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+
+
+arm_2_joint_2:
   control_mode: D4_impedance_ctrl
   sign: 1
   pos_offset: 0
   max_current_A: 0.0
   pid :
-    position: [220.0 , 0.0 , 5.0]
-    #  .... tor_K divided by 10000 to respect the int range [0..65536]
-    #impedance:  [0.0, 0.0, 5.0, 0.001, 0.08]
-    impedance:   [250.0, 5.0, 2.0, 0.001, 0.08]
+    position: [220.0 , 0.0 , 10.0]
+    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
 
     
-LHipSag:
+arm_2_joint_3:
   control_mode: D4_impedance_ctrl
-  sign: 1
-  pos_offset: 0
-  max_current_A: 0.0
   pid :
-    position: [220.0 , 0.0 , 5.0]
-    #  .... tor_K divided by 10000 to respect the int range [0..65536]
-    #impedance:  [0.0, 0.0, 5.0, 0.001, 0.08]
-    impedance:   [250.0, 5.0, 2.0, 0.001, 0.08]
-
-
-LHipYaw:
-  control_mode: D4_impedance_ctrl
-  sign: -1
-  pos_offset: 0
-  max_current_A: 0.0
-  pid :
-    position: [220.0 , 0.0 , 5.0]
-    #  .... tor_K divided by 10000 to respect the int range [0..65536]
-    #impedance:  [0.0, 0.0, 5.0, 0.001, 0.08]
-    impedance:   [250.0, 5.0, 2.0, 0.001, 0.08]
-
-    
-LKneePitch:
-  control_mode: D4_impedance_ctrl
-  sign: 1
-  pos_offset: 0
-  max_current_A: 0.0
-  pid :
-    position: [220.0 , 0.0 , 5.0]
-    #  .... tor_K divided by 10000 to respect the int range [0..65536]
-    #impedance:  [0.0, 0.0, 5.0, 0.001, 0.08]
-    impedance:   [250.0, 5.0, 2.0, 0.001, 0.08]
+    position: [220.0 , 0.0 , 10.0]
+    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
   
 
-LAnkleLeftMot:
+arm_2_joint_4:
   control_mode: D4_impedance_ctrl
-  sign: 1
-  pos_offset: 0
-  max_current_A: 0.0
   pid :
-    position: [220.0 , 0.0 , 5.0]
-    #  .... tor_K divided by 10000 to respect the int range [0..65536]
-    #impedance:  [0.0, 0.0, 5.0, 0.001, 0.08]
-    impedance:   [250.0, 5.0, 2.0, 0.001, 0.08]
+    position: [220.0 , 0.0 , 10.0]
+    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
 
 
-LAnkleRightMot:
+arm_2_joint_5:
   control_mode: D4_impedance_ctrl
-  sign: -1
-  pos_offset: 0
-  max_current_A: 0.0
   pid :
-    position: [220.0 , 0.0 , 5.0]
-    #  .... tor_K divided by 10000 to respect the int range [0..65536]
-    #impedance:  [0.0, 0.0, 5.0, 0.001, 0.08]
-    impedance:   [250.0, 5.0, 2.0, 0.001, 0.08]
+    position: [220.0 , 0.0 , 10.0]
+    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
 
 
-##############################
-# RIGHT ARM
-##############################
-
-RShSag:
+arm_2_joint_6:
   control_mode: D4_impedance_ctrl
-  sign: -1
-  pos_offset: -45
-  max_current_A: 0.0
   pid :
-    position: [500.0 , 0.0 , 10.0]
-    #  .... tor_K divided by 10000 to respect the int range [0..65536]
-    #impedance:  [0.0, 0.0, 5.0, 0.001, 0.08]
-    impedance:   [250.0, 5.0, 2.0, 0.001, 0.08]
+    position: [220.0 , 0.0 , 10.0]
+    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
 
 
-RShLat:
-  control_mode: D4_impedance_ctrl
-  sign: -1
-  pos_offset: -45
-  max_current_A: 0.0
-  pid :
-    position: [220.0 , 0.0 , 5.0]
-    #  .... tor_K divided by 10000 to respect the int range [0..65536]
-    #impedance:  [0.0, 0.0, 5.0, 0.001, 0.08]
-    impedance:   [250.0, 5.0, 2.0, 0.001, 0.08]
-
-
-RShYaw:
-  control_mode: D4_impedance_ctrl
-  sign: -1
-  pos_offset: 0
-  max_current_A: 0.0
-  pid :
-    position: [220.0 , 0.0 , 5.0]
-    #  .... tor_K divided by 10000 to respect the int range [0..65536]
-    #impedance:  [0.0, 0.0, 5.0, 0.001, 0.08]
-    impedance:   [250.0, 5.0, 2.0, 0.001, 0.08]
-
-
-RElbj:
-  control_mode: D4_impedance_ctrl
-  sign: -1
-  pos_offset: 0
-  max_current_A: 0.0
-  pid :
-    position: [220.0 , 0.0 , 5.0]
-    #  .... tor_K divided by 10000 to respect the int range [0..65536]
-    #impedance:  [0.0, 0.0, 5.0, 0.001, 0.08]
-    impedance:   [250.0, 5.0, 2.0, 0.001, 0.08]
-
-
-RForearmPlate:
-  control_mode: D4_impedance_ctrl
-  sign: -1
-  pos_offset: 0
-  max_current_A: 0.0
-  pid :
-    position: [220.0 , 0.0 , 5.0]
-    #  .... tor_K divided by 10000 to respect the int range [0..65536]
-    #impedance:  [0.0, 0.0, 5.0, 0.001, 0.08]
-    impedance:   [250.0, 5.0, 2.0, 0.001, 0.08]
-
-
-RWrj1:
-  control_mode: D4_impedance_ctrl
-  sign: -1
-  pos_offset: 0
-  max_current_A: 0.0
-  pid :
-    position: [220.0 , 0.0 , 5.0]
-    #  .... tor_K divided by 10000 to respect the int range [0..65536]
-    #impedance:  [0.0, 0.0, 5.0, 0.001, 0.08]
-    impedance:   [250.0, 5.0, 2.0, 0.001, 0.08]
-
-
-RWrj2:
-  control_mode: D4_impedance_ctrl
-  sign: -1
-  pos_offset: 0
-  max_current_A: 0.0
-  pid :
-    position: [220.0 , 0.0 , 5.0]
-    #  .... tor_K divided by 10000 to respect the int range [0..65536]
-    #impedance:  [0.0, 0.0, 5.0, 0.001, 0.08]
-    impedance:   [250.0, 5.0, 2.0, 0.001, 0.08]
-    
-# RA_HA = 18
-#r_arm_ft_joint:
-  #control_mode: D4_impedance_ctrl
-  #sign: 1
-  #pos_offset: 0
-  #max_current_A: 0.0
-  #pid :
-    #position: [220.0 , 0.0 , 5.0]
-    ##  .... tor_K divided by 10000 to respect the int range [0..65536]
-    ##impedance:  [0.0, 0.0, 5.0, 0.001, 0.08]
-    #impedance:   [250.0, 5.0, 2.0, 0.001, 0.08]    
-
-    
-# RA_HA = 19
-r_wrist_joint:
-  control_mode: 3B_motor_pos_ctrl
-  sign: 1
-  pos_offset: 0
-  max_current_A: 0.0
-  pid :
-    position: [220.0 , 0.0 , 5.0]
-    #  .... tor_K divided by 10000 to respect the int range [0..65536]
-    #impedance:  [0.0, 0.0, 5.0, 0.001, 0.08]
-    impedance:   [250.0, 5.0, 2.0, 0.001, 0.08]
-
-    
-    
-
-##############################
-# LEFT ARM
-##############################
-    
-LShSag:
-  control_mode: D4_impedance_ctrl
-  sign: 1
-  pos_offset: -45
-  max_current_A: 0.0
-  pid :
-    position: [220.0 , 0.0 , 5.0]
-    #  .... tor_K divided by 10000 to respect the int range [0..65536]
-    #impedance:  [0.0, 0.0, 5.0, 0.001, 0.08]
-    impedance:   [250.0, 5.0, 2.0, 0.001, 0.08]
-
-
-LShLat:
-  control_mode: D4_impedance_ctrl
-  sign: -1
-  pos_offset: 45
-  max_current_A: 0.0
-  pid :
-    position: [220.0 , 0.0 , 5.0]
-    #  .... tor_K divided by 10000 to respect the int range [0..65536]
-    #impedance:  [0.0, 0.0, 5.0, 0.001, 0.08]
-    impedance:   [250.0, 5.0, 2.0, 0.001, 0.08]
-
-
-LShYaw:
-  control_mode: D4_impedance_ctrl
-  sign: -1
-  pos_offset: 0
-  max_current_A: 0.0
-  pid :
-    position: [220.0 , 0.0 , 5.0]
-    #  .... tor_K divided by 10000 to respect the int range [0..65536]
-    #impedance:  [0.0, 0.0, 5.0, 0.001, 0.08]
-    impedance:   [250.0, 5.0, 2.0, 0.001, 0.08]
-
-    
-LElbj:
-  control_mode: D4_impedance_ctrl
-  sign: 1
-  pos_offset: 0
-  max_current_A: 0.0
-  pid :
-    position: [220.0 , 0.0 , 5.0]
-    #  .... tor_K divided by 10000 to respect the int range [0..65536]
-    #impedance:  [0.0, 0.0, 5.0, 0.001, 0.08]
-    impedance:   [250.0, 5.0, 2.0, 0.001, 0.08]
-
-    
-LForearmPlate:
-  control_mode: D4_impedance_ctrl
-  sign: -1
-  pos_offset: 0
-  max_current_A: 0.0
-  pid :
-    position: [220.0 , 0.0 , 5.0]
-    #  .... tor_K divided by 10000 to respect the int range [0..65536]
-    #impedance:  [0.0, 0.0, 5.0, 0.001, 0.08]
-    impedance:   [250.0, 5.0, 2.0, 0.001, 0.08]
-
-
-LWrj1:
-  control_mode: D4_impedance_ctrl
-  sign: 1
-  pos_offset: 0
-  max_current_A: 0.0
-  pid :
-    position: [220.0 , 0.0 , 5.0]
-    #  .... tor_K divided by 10000 to respect the int range [0..65536]
-    #impedance:  [0.0, 0.0, 5.0, 0.001, 0.08]
-    impedance:   [250.0, 5.0, 2.0, 0.001, 0.08]
-
-
-LWrj2:
-  control_mode: D4_impedance_ctrl
-  sign: -1
-  pos_offset: 0
-  max_current_A: 0.0
-  pid :
-    position: [220.0 , 0.0 , 5.0]
-    #  .... tor_K divided by 10000 to respect the int range [0..65536]
-    #impedance:  [0.0, 0.0, 5.0, 0.001, 0.08]
-    impedance:   [250.0, 5.0, 2.0, 0.001, 0.08]
-
-# LA_HA = 28
-#l_arm_ft_joint:
-  #control_mode: D4_impedance_ctrl
-  #sign: 1
-  #pos_offset: 0
-  #max_current_A: 0.0
-  #pid :
-    #position: [220.0 , 0.0 , 5.0]
-    ##  .... tor_K divided by 10000 to respect the int range [0..65536]
-    ##impedance:  [0.0, 0.0, 5.0, 0.001, 0.08]
-    #impedance:   [250.0, 5.0, 2.0, 0.001, 0.08]    
-    
-# LA_HA = 29
-l_wrist_joint:
-  control_mode: 3B_motor_pos_ctrl
-  sign: 1
-  pos_offset: 0
-  max_current_A: 0.0
-  pid :
-    position: [220.0 , 0.0 , 5.0]
-    #  .... tor_K divided by 10000 to respect the int range [0..65536]
-    #impedance:  [0.0, 0.0, 5.0, 0.001, 0.08]
-    impedance:   [250.0, 5.0, 2.0, 0.001, 0.08]
- 
 
 #############################
-# WAIST
+# ARM 3 
 #############################
-
-WaistYaw:
+arm_3_joint_1:
   control_mode: D4_impedance_ctrl
-  sign: 1
-  pos_offset: 0
-  max_current_A: 0.0
   pid :
-    position: [220.0 , 0.0 , 5.0]
-    #  .... tor_K divided by 10000 to respect the int range [0..65536]
-    #impedance:  [0.0, 0.0, 5.0, 0.001, 0.08]
-    impedance:   [250.0, 5.0, 2.0, 0.001, 0.08]
+    position: [220.0 , 0.0 , 10.0]
+    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
 
-WaistLat:
+
+arm_3_joint_2:
   control_mode: D4_impedance_ctrl
-  sign: 1
-  pos_offset: 0
-  max_current_A: 0.0
   pid :
-    position: [220.0 , 0.0 , 5.0]
-    #  .... tor_K divided by 10000 to respect the int range [0..65536]
-    #impedance:  [0.0, 0.0, 5.0, 0.001, 0.08]
-    impedance:   [250.0, 5.0, 2.0, 0.001, 0.08]
+    position: [220.0 , 0.0 , 10.0]
+    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
 
-  #157: l_leg_ft_joint
-  #147: r_leg_ft_joint
-  #91: imu_joint
+    
+arm_3_joint_3:
+  control_mode: D4_impedance_ctrl
+  pid :
+    position: [220.0 , 0.0 , 10.0]
+    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+  
+
+arm_3_joint_4:
+  control_mode: D4_impedance_ctrl
+  pid :
+    position: [220.0 , 0.0 , 10.0]
+    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+
+
+arm_3_joint_5:
+  control_mode: D4_impedance_ctrl
+  pid :
+    position: [220.0 , 0.0 , 10.0]
+    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+
+
+arm_3_joint_6:
+  control_mode: D4_impedance_ctrl
+  pid :
+    position: [220.0 , 0.0 , 10.0]
+    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+
+
 
