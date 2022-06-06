@@ -19,7 +19,7 @@ xbotcore_device_configs:
 
 # threads
 xbotcore_threads:
-    rt_main:  {sched: fifo , prio: 60, period: 0.001, core_id: 2}
+    rt_main:  {sched: fifo , prio: 60, period: 0.001} #, core_id: 2}
     nrt_main: {sched: other, prio: 0 , period: 0.005}
 
 
@@ -28,7 +28,7 @@ xbotcore_plugins:
 
     homing:
         thread: rt_main
-        type: homing_example
+        type: homing
 
     ros_io: {thread: nrt_main, type: ros_io}
 
