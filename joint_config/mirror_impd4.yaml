@@ -8,42 +8,42 @@ arm_1_joint_1:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    impedance:   [1500.0, 15.0, 1.0, 0.007, 0.75]
 
 
 arm_1_joint_2:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    impedance:   [1500.0, 15.0, 1.0, 0.007, 0.75]
 
     
 arm_1_joint_3:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    impedance:   [1500.0, 15.0, 1.0, 0.007, 0.75]
   
 
 arm_1_joint_4:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    impedance:   [1500.0, 15.0, 1.0, 0.007, 0.75]
 
 
 arm_1_joint_5:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    impedance:   [1000.0, 10.0, 1.0, 0.007, 0.75]
 
 
 arm_1_joint_6:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    impedance:   [500.0, 10.0, 1.0, 0.007, 0.75]
 
 #############################
 # ARM 2 
@@ -52,7 +52,7 @@ arm_2_joint_1:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    impedance:   [1500.0, 15.0, 1.0, 0.007, 0.75]
 
 
 arm_2_joint_2:
@@ -62,35 +62,35 @@ arm_2_joint_2:
   max_current_A: 0.0
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    impedance:   [1500.0, 15.0, 1.0, 0.007, 0.75]
 
     
 arm_2_joint_3:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    impedance:   [1500.0, 15.0, 1.0, 0.007, 0.75]
   
 
 arm_2_joint_4:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    impedance:   [1500.0, 15.0, 1.0, 0.007, 0.75]
 
 
 arm_2_joint_5:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    impedance:   [1000.0, 10.0, 1.0, 0.007, 0.75]
 
 
 arm_2_joint_6:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    impedance:   [500.0, 10.0, 1.0, 0.007, 0.75]
 
 
 
@@ -101,42 +101,42 @@ arm_3_joint_1:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    impedance:   [1500.0, 15.0, 1.0, 0.007, 0.75]
 
 
 arm_3_joint_2:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    impedance:   [1500.0, 15.0, 1.0, 0.007, 0.75]
 
     
 arm_3_joint_3:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    impedance:   [1500.0, 15.0, 1.0, 0.007, 0.75]
   
 
 arm_3_joint_4:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    impedance:   [1500.0, 15.0, 1.0, 0.007, 0.75]
 
 
 arm_3_joint_5:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    impedance:   [1000.0, 10.0, 1.0, 0.007, 0.75]
 
 
 arm_3_joint_6:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    impedance:   [500.0, 10.0, 1.0, 0.007, 0.75]
 
 
 
