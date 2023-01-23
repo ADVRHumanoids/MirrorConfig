@@ -5,6 +5,7 @@ zmq_setup:
 # ARM 1 
 #############################
 arm_1_joint_1:
+  brake_present: true
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
@@ -12,6 +13,7 @@ arm_1_joint_1:
 
 
 arm_1_joint_2:
+  brake_present: true
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
@@ -19,6 +21,7 @@ arm_1_joint_2:
 
     
 arm_1_joint_3:
+  brake_present: true
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
@@ -26,6 +29,7 @@ arm_1_joint_3:
   
 
 arm_1_joint_4:
+  brake_present: true
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
@@ -33,6 +37,7 @@ arm_1_joint_4:
 
 
 arm_1_joint_5:
+  brake_present: true
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
@@ -40,6 +45,7 @@ arm_1_joint_5:
 
 
 arm_1_joint_6:
+  brake_present: true
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
@@ -49,6 +55,7 @@ arm_1_joint_6:
 # ARM 2 
 #############################
 arm_2_joint_1:
+  brake_present: true
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
@@ -56,16 +63,15 @@ arm_2_joint_1:
 
 
 arm_2_joint_2:
+  brake_present: true
   control_mode: D4_impedance_ctrl
-  sign: 1
-  pos_offset: 0
-  max_current_A: 0.0
   pid :
     position: [220.0 , 0.0 , 10.0]
     impedance:   [1500.0, 15.0, 1.0, 0.007, 0.75]
 
     
 arm_2_joint_3:
+  brake_present: true
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
@@ -73,6 +79,7 @@ arm_2_joint_3:
   
 
 arm_2_joint_4:
+  brake_present: true
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
@@ -80,6 +87,7 @@ arm_2_joint_4:
 
 
 arm_2_joint_5:
+  brake_present: true
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
@@ -87,6 +95,7 @@ arm_2_joint_5:
 
 
 arm_2_joint_6:
+  brake_present: true
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
@@ -98,6 +107,7 @@ arm_2_joint_6:
 # ARM 3 
 #############################
 arm_3_joint_1:
+  brake_present: true
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
@@ -105,6 +115,7 @@ arm_3_joint_1:
 
 
 arm_3_joint_2:
+  brake_present: true
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
@@ -112,6 +123,7 @@ arm_3_joint_2:
 
     
 arm_3_joint_3:
+  brake_present: true
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
@@ -119,6 +131,7 @@ arm_3_joint_3:
   
 
 arm_3_joint_4:
+  brake_present: true
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
@@ -126,6 +139,7 @@ arm_3_joint_4:
 
 
 arm_3_joint_5:
+  brake_present: true
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
@@ -133,6 +147,7 @@ arm_3_joint_5:
 
 
 arm_3_joint_6:
+  brake_present: true
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
