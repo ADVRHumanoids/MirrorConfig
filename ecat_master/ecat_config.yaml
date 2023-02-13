@@ -78,7 +78,7 @@ CentAcESC_X: &CentAcESC_X
   aux_pdo : # names defined in SDO index 0x8002 
      _rd :  [ pos_ref_fb ]
      _rd :  [ pos_ref_fb, motor_enc_warn, motor_enc_err, link_enc_warn, link_enc_err ]
-     _rd :  [ iq_ref_fb, id_ref_fb ]
+     rd :  [ iq_ref_fb, iq_out_fb ]
      _wr :  [ iq_ref ]
      _wrd : [ "iq_offset&&iq_out_fb" ]
      _wrd : [ "ts&&rtt" ]
@@ -87,4 +87,138 @@ Ft6Msp432ESC_X:
   analog_sample_freq_HZ: 20000
 
 AinMsp432ESC_X:
-  analog_sample_freq_HZ: 1000
+  analog_sample_freq_H    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+
+defaults:
+  - &big_max_curr 40
+  - &mid_max_curr 25
+  - &rd_aux_pdo [ iq_ref_fb, iq_out_fb ]
+
+
+CentAcESC_11:
+  sign: 1
+  pos_offset: 0
+  max_current_A: *big_max_curr
+  aux_pdo:
+    rd: *rd_aux_pdo
+
+CentAcESC_12:
+  sign: 1
+  pos_offset: 0
+  max_current_A: *big_max_curr
+  aux_pdo:
+    rd: *rd_aux_pdo
+
+CentAcESC_13:
+  sign: 1
+  pos_offset: 0
+  max_current_A: *big_max_curr
+  aux_pdo:
+    rd: *rd_aux_pdo
+
+CentAcESC_14:
+  sign: 1
+  pos_offset: 0
+  max_current_A: *mid_max_curr
+  aux_pdo:
+    rd: *rd_aux_pdo
+
+CentAcESC_15:
+  sign: 1
+  pos_offset: 0
+  max_current_A: *mid_max_curr
+  aux_pdo:
+    rd: *rd_aux_pdo
+
+CentAcESC_16:
+  sign: 1
+  pos_offset: 0
+  max_current_A: *mid_max_curr
+  aux_pdo:
+    rd: *rd_aux_pdo
+
+
+CentAcESC_21:
+  sign: 1
+  pos_offset: 0
+  max_current_A: *big_max_curr
+  aux_pdo:
+    rd: *rd_aux_pdo
+
+CentAcESC_22:
+  sign: 1
+  pos_offset: 0
+  max_current_A: *big_max_curr
+  aux_pdo:
+    rd: *rd_aux_pdo
+
+CentAcESC_23:
+  sign: 1
+  pos_offset: 0
+  max_current_A: *big_max_curr
+  aux_pdo:
+    rd: *rd_aux_pdo
+
+CentAcESC_24:
+  sign: 1
+  pos_offset: 0
+  max_current_A: *mid_max_curr
+  aux_pdo:
+    rd: *rd_aux_pdo
+
+CentAcESC_25:
+  sign: 1
+  pos_offset: 0
+  max_current_A: *mid_max_curr
+  aux_pdo:
+    rd: *rd_aux_pdo
+
+CentAcESC_26:
+  sign: 1
+  pos_offset: 0
+  max_current_A: *mid_max_curr
+  aux_pdo:
+    rd: *rd_aux_pdo
+
+
+CentAcESC_31:
+  sign: 1
+  pos_offset: 0
+  max_current_A: *big_max_curr
+  aux_pdo:
+    rd: *rd_aux_pdo
+
+CentAcESC_32:
+  sign: 1
+  pos_offset: 0
+  max_current_A: *big_max_curr
+  aux_pdo:
+    rd: *rd_aux_pdo
+
+CentAcESC_33:
+  sign: 1
+  pos_offset: 0
+  max_current_A: *big_max_curr
+  aux_pdo:
+    rd: *rd_aux_pdo
+
+CentAcESC_34:
+  sign: 1
+  pos_offset: 0
+  max_current_A: *mid_max_curr
+  aux_pdo:
+    rd: *rd_aux_pdo
+
+CentAcESC_35:
+  sign: 1
+  pos_offset: 0
+  max_current_A: *mid_max_curr
+  aux_pdo:
+    rd: *rd_aux_pdo
+
+CentAcESC_36:
+  sign: 1
+  pos_offset: 0
+  max_current_A: *mid_max_curr
+  aux_pdo:
+    rd: *rd_aux_pdo
