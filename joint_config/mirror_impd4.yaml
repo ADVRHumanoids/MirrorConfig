@@ -1,6 +1,11 @@
 zmq_setup:
   timeout: 1000
 
+gains:
+  - &imp_big [2500.0, 20.0, 1.0, 0.009, 0.80]
+  - &imp_mid [1500.0, 20.0, 1.0, 0.009, 0.80]
+  - &imp_small [500.0, 10.0, 1.0, 0.009, 0.80]
+
 #############################
 # ARM 1 
 #############################
@@ -9,7 +14,7 @@ arm_1_joint_1:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [1500.0, 15.0, 1.0, 0.007, 0.75]
+    impedance: *imp_big
 
 
 arm_1_joint_2:
@@ -17,7 +22,7 @@ arm_1_joint_2:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [1500.0, 15.0, 1.0, 0.007, 0.75]
+    impedance: *imp_big
 
     
 arm_1_joint_3:
@@ -25,7 +30,7 @@ arm_1_joint_3:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [1500.0, 15.0, 1.0, 0.007, 0.75]
+    impedance: *imp_big
   
 
 arm_1_joint_4:
@@ -33,7 +38,7 @@ arm_1_joint_4:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [1500.0, 15.0, 1.0, 0.007, 0.75]
+    impedance: *imp_big
 
 
 arm_1_joint_5:
@@ -41,7 +46,7 @@ arm_1_joint_5:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [1000.0, 10.0, 1.0, 0.007, 0.75]
+    impedance: *imp_mid
 
 
 arm_1_joint_6:
@@ -49,7 +54,7 @@ arm_1_joint_6:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.75]
+    impedance: *imp_small
 
 #############################
 # ARM 2 
@@ -59,7 +64,7 @@ arm_2_joint_1:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [1500.0, 15.0, 1.0, 0.007, 0.75]
+    impedance: *imp_big
 
 
 arm_2_joint_2:
@@ -67,7 +72,7 @@ arm_2_joint_2:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [1500.0, 15.0, 1.0, 0.007, 0.75]
+    impedance: *imp_big
 
     
 arm_2_joint_3:
@@ -75,7 +80,7 @@ arm_2_joint_3:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [1500.0, 15.0, 1.0, 0.007, 0.75]
+    impedance: *imp_big
   
 
 arm_2_joint_4:
@@ -83,7 +88,7 @@ arm_2_joint_4:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [1500.0, 15.0, 1.0, 0.007, 0.75]
+    impedance: *imp_big
 
 
 arm_2_joint_5:
@@ -91,7 +96,7 @@ arm_2_joint_5:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [1000.0, 10.0, 1.0, 0.007, 0.75]
+    impedance: *imp_mid
 
 
 arm_2_joint_6:
@@ -99,7 +104,7 @@ arm_2_joint_6:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.75]
+    impedance: *imp_small
 
 
 
@@ -111,7 +116,7 @@ arm_3_joint_1:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [1500.0, 15.0, 1.0, 0.007, 0.75]
+    impedance: *imp_big
 
 
 arm_3_joint_2:
@@ -119,7 +124,7 @@ arm_3_joint_2:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [1500.0, 15.0, 1.0, 0.007, 0.75]
+    impedance: *imp_big
 
     
 arm_3_joint_3:
@@ -127,7 +132,7 @@ arm_3_joint_3:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [1500.0, 15.0, 1.0, 0.007, 0.75]
+    impedance: *imp_big
   
 
 arm_3_joint_4:
@@ -135,7 +140,7 @@ arm_3_joint_4:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [1500.0, 15.0, 1.0, 0.007, 0.75]
+    impedance: *imp_big
 
 
 arm_3_joint_5:
@@ -143,7 +148,7 @@ arm_3_joint_5:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [1000.0, 10.0, 1.0, 0.007, 0.75]
+    impedance: *imp_mid
 
 
 arm_3_joint_6:
@@ -151,7 +156,7 @@ arm_3_joint_6:
   control_mode: D4_impedance_ctrl
   pid :
     position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.75]
+    impedance: *imp_small
 
 
 

@@ -1,6 +1,10 @@
 zmq_setup:
   timeout: 1000
 
+defaults:
+  - &big_pos_gain [3000.0 , 0.0 , 60.0] 
+  - &mid_pos_gain [2000.0 , 0.0 , 40.0] 
+
 #############################
 # ARM 1 
 #############################
@@ -8,48 +12,42 @@ arm_1_joint_1:
   brake_present: true
   control_mode: 3B_motor_pos_ctrl
   pid :
-    position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    position: *big_pos_gain
 
 
 arm_1_joint_2:
   brake_present: true
   control_mode: 3B_motor_pos_ctrl
   pid :
-    position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    position: *big_pos_gain
 
     
 arm_1_joint_3:
   brake_present: true
   control_mode: 3B_motor_pos_ctrl
   pid :
-    position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    position: *big_pos_gain
   
 
 arm_1_joint_4:
   brake_present: true
   control_mode: 3B_motor_pos_ctrl
   pid :
-    position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    position: *mid_pos_gain
 
 
 arm_1_joint_5:
   brake_present: true
   control_mode: 3B_motor_pos_ctrl
   pid :
-    position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    position: *mid_pos_gain
 
 
 arm_1_joint_6:
   brake_present: true
   control_mode: 3B_motor_pos_ctrl
   pid :
-    position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    position: *mid_pos_gain
 
 #############################
 # ARM 2 
@@ -58,48 +56,42 @@ arm_2_joint_1:
   brake_present: true
   control_mode: 3B_motor_pos_ctrl
   pid :
-    position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    position: *big_pos_gain
 
 
 arm_2_joint_2:
   brake_present: true
   control_mode: 3B_motor_pos_ctrl
   pid :
-    position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    position: *big_pos_gain
 
     
 arm_2_joint_3:
   brake_present: true
   control_mode: 3B_motor_pos_ctrl
   pid :
-    position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    position: *big_pos_gain
   
 
 arm_2_joint_4:
   brake_present: true
   control_mode: 3B_motor_pos_ctrl
   pid :
-    position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    position: *mid_pos_gain
 
 
 arm_2_joint_5:
   brake_present: true
   control_mode: 3B_motor_pos_ctrl
   pid :
-    position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    position: *mid_pos_gain
 
 
 arm_2_joint_6:
   brake_present: true
   control_mode: 3B_motor_pos_ctrl
   pid :
-    position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    position: *mid_pos_gain
 
 
 
@@ -110,47 +102,41 @@ arm_3_joint_1:
   brake_present: true
   control_mode: 3B_motor_pos_ctrl
   pid :
-    position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    position: *big_pos_gain
 
 
 arm_3_joint_2:
   brake_present: true
   control_mode: 3B_motor_pos_ctrl
   pid :
-    position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    position: *big_pos_gain
 
     
 arm_3_joint_3:
   brake_present: true
   control_mode: 3B_motor_pos_ctrl
   pid :
-    position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    position: *big_pos_gain
   
 
 arm_3_joint_4:
   brake_present: true
   control_mode: 3B_motor_pos_ctrl
   pid :
-    position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    position: *mid_pos_gain
 
 
 arm_3_joint_5:
   brake_present: true
   control_mode: 3B_motor_pos_ctrl
   pid :
-    position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    position: *mid_pos_gain
 
 
 arm_3_joint_6:
   brake_present: true
   control_mode: 3B_motor_pos_ctrl
   pid :
-    position: [220.0 , 0.0 , 10.0]
-    impedance:   [500.0, 10.0, 1.0, 0.007, 0.07]
+    position: *mid_pos_gain
 
 
